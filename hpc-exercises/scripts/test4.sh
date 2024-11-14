@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p courseb # partition (queue)
+#SBATCH -p pcourseb # partition (queue)
 #SBATCH -N 1 # number of nodes
 #SBATCH -n 1 # number of cores
 #SBATCH --mem 10G # memory pool for all cores
