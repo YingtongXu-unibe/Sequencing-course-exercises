@@ -1,0 +1,41 @@
+WARNING: GATK v4.2.6.1 support for Java 11 is in beta state. Use at your own risk.
+
+The following have been reloaded with a version change:
+  1) Java/11.0.18 => Java/17.0.6
+
+[bwa_index] Pack FASTA... 0.31 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=121933358, availableWord=20579600
+[BWTIncConstructFromPacked] 10 iterations done. 33946494 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 62712094 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 88275022 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 110991342 characters processed.
+[bwt_gen] Finished constructing BWT in 46 iterations.
+[bwa_index] 16.51 seconds elapse.
+[bwa_index] Update BWT... 0.22 sec
+[bwa_index] Pack forward-only FASTA... 0.18 sec
+[bwa_index] Construct SA from BWT and Occ... 9.43 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index -a bwtsw -p refIdx/chr14.fa refIdx/chr14.fa
+[main] Real time: 27.252 sec; CPU: 26.654 sec
+Using GATK jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar CreateSequenceDictionary R=refIdx/chr14.fa O=refIdx/chr14.dict
+INFO	2024-11-14 10:43:52	CreateSequenceDictionary	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    CreateSequenceDictionary -R refIdx/chr14.fa -O refIdx/chr14.dict
+**********
+
+
+10:43:52.469 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Thu Nov 14 10:43:52 CET 2024] CreateSequenceDictionary OUTPUT=refIdx/chr14.dict REFERENCE=refIdx/chr14.fa    TRUNCATE_NAMES_AT_WHITESPACE=true NUM_SEQUENCES=2147483647 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=2 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Thu Nov 14 10:43:52 CET 2024] Executing as student46@binfservas47 on Linux 4.18.0-553.el8_10.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.6+10; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: 4.2.6.1
+[Thu Nov 14 10:43:53 CET 2024] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2076049408
